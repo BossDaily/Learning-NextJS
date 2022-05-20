@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "next dev -p 22548",
+    "build": "next build -p 22548",
+    "start": "next start -p 22548"
   },
   "dependencies": {
     "next": "^12.0.7",
