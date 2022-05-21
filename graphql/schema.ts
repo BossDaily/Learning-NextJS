@@ -11,7 +11,7 @@ export const typeDefs = gql `
         users: [String]
     }
 
-    tpye Query {
+    type Query {
         links: [Link]!
     }
 `
