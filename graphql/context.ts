@@ -10,3 +10,5 @@ const createContext = async ({ req, res }): Promise<Context> => {
         prisma, 
     }
 }
+
+export default createContext
