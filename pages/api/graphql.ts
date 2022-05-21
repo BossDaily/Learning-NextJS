@@ -9,7 +9,7 @@ const apolloServer = new ApolloServer({ typeDefs, resolvers })
 
 const startServer = apolloServer.start()
 
-export default Cors(async function (req, res) {
+export default Cors(async function handler(req, res) {
     if(req.method === 'OPTIONS'){
         res.end()
         return false
