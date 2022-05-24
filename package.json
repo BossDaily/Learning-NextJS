@@ -11,6 +11,7 @@
     "start": "next start -p 22548"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.5",
     "@prisma/client": "^3.14.0",
     "apollo-server-micro": "^3.7.0",
     "graphql": "^16.5.0",
