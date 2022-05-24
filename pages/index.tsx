@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { links } from '../data/links';
+import { gql, useQuery } from '@apollo/client'
 
 export default function Home() {
   return (
