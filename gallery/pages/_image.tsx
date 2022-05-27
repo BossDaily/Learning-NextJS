@@ -13,3 +13,5 @@ const Image = () => {
       </a>
     )
   }
+
+export default Image
