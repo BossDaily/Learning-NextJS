@@ -13,6 +13,12 @@ const Gallery = () => {
 }
 
 const Image = () => {
-
+  return (
+    <a href='#' className='group'>
+      <div>
+        
+      </div>
+    </a>
+  )
 }
 export default Gallery
