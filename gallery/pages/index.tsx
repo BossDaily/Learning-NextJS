@@ -1,6 +1,3 @@
-import type { NextComponentType, NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
 
 const Gallery = () => {
   return (
@@ -15,8 +12,8 @@ const Gallery = () => {
 const Image = () => {
   return (
     <a href='#' className='group'>
-      <div>
-        
+      <div className='aspect-w-1 aspect-h-1 xl:apsect-w-7'>
+
       </div>
     </a>
   )
