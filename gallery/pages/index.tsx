@@ -4,5 +4,10 @@ import Gallery from "./_gallery";
 import { NextPage } from "next";
 
 const Home:NextPage = () => {
-  <Gallery />
+  return(
+    <Gallery />
+  )
+  
 }
+
+export default Home
