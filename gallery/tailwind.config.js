@@ -6,8 +6,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  corePlugins: {
-    
-  },
-  plugins: [],
+  plugins: [require('@tailwindcss/aspect-ratio')],
 }

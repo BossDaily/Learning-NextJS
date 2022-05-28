@@ -2,6 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['avatars.githubusercontent.com', 'bit.ly']
+    domains: ['bit.ly']
   },
 }
