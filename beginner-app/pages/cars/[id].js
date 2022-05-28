@@ -25,7 +25,7 @@ export default Car;
 
 export const getServerSideProps = async ({ params }) => {
 
-    const req = await fetch(`http://localhost:300/${params.id}.json`)
+    const req = await fetch(`http://localhost:3000/${params.id}.json`)
     const data = await req.json()
 
     return {
