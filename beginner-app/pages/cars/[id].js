@@ -1,4 +1,5 @@
 import {useRouter} from 'next/router';
+import Head from 'next/head'
 
 const Car = ({ car }) => {
     const router = useRouter()
@@ -23,5 +24,20 @@ export const getStaticProps = async ({ params }) => {
         props: {
             car: data
         }
+    }
+}
+
+export const getStaticPaths = async (ctx) => {
+    const { data } = await  // your fetch function here 
+
+    return {
+        paths: [
+            {
+                params: {
+                    
+                }
+            }
+        ],
+        fallback: "blocking"
     }
 }
