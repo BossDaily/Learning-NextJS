@@ -1,5 +1,5 @@
 
-const index = () => {
+const CarsList = () => {
     return (
         <div>
             makween
@@ -7,4 +7,4 @@ const index = () => {
     );
 }
 
-export default index;
+export default CarsList;
