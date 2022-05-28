@@ -21,3 +21,14 @@ const Car = ({ car }) => {
 
 export default Car;
 
+
+
+export const getServerSideProps = async ({ params }) => {
+
+
+    return {
+        props:{
+            data:null
+        }
+    }
+}
