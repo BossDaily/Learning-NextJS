@@ -5,7 +5,7 @@ const BlurImage = () => {
         <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
           <Image
             alt=""
-            src="https://avatars.githubusercontent.com/u/75937850?v=4"
+            src="https://bit.ly/placeholder-img"
             layout="fill"
             objectFit="cover"
             className="group-hover:opacity-75"
