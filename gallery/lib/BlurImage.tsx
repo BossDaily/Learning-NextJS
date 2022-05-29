@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useState } from "react";
 const BlurImage = () => {
     return (
       <a href="#" className="group">
