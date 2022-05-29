@@ -1,3 +1,4 @@
+import Image from "next/image";
 const BlurImage = () => {
     return (
       <a href="#" className="group">
