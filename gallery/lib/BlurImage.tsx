@@ -1,5 +1,10 @@
 import Image from "next/image";
 import { useState } from "react";
+
+const cn = (...classes: string[]) => {
+    return classes.filter(Boolean).join(' ')
+}
+
 const BlurImage = () => {
     const [isLoading, setLoading] = useState(true)
 
