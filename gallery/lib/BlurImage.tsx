@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import { createClient } from "@supabase/supabase-js";
 
 const cn = (...classes: string[]) => {
     return classes.filter(Boolean).join(' ')
