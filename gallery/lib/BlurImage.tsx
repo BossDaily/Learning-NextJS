@@ -18,6 +18,7 @@ const BlurImage = () => {
                 : 'grayscale-0 blur-0 0 scale-100'
             )
             }
+            onLoadingComplete={() => setLoading(false)}
           />
         </div>
         <h3 className="mt-4 text-sm text-gray-700">BossDaily</h3>
