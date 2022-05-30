@@ -14,9 +14,6 @@ const Home = () => {
     </div>
   );
 }
-const cn = (...classes: string[]) => {
-    return classes.filter(Boolean).join(' ')
-}
 
 
 export default Home
