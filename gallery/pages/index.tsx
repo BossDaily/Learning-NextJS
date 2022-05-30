@@ -3,6 +3,7 @@ import {GetStaticProps} from 'next';
 import BlurImage from "../lib/BlurImage";
 import { createClient } from "@supabase/supabase-js";
 import { Images } from "../types/image"
+import { useState } from "react";
 
 const cn = (...classes: string[]) => {
   return classes.filter(Boolean).join(' ')
