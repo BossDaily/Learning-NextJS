@@ -1,9 +1,21 @@
 import Image from "next/image";
+import {GetStaticProps} from 'next';
 import BlurImage from "../lib/BlurImage";
 
 const cn = (...classes: string[]) => {
   return classes.filter(Boolean).join(' ')
 }
+
+export const getStaticProps:GetStaticProps = async (ctx) => {
+  
+
+  return {
+    props:{
+      data:null
+    }
+  }
+}
+
 
 const Home = () => {
   return (
