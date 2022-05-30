@@ -14,13 +14,13 @@ export const getStaticProps:GetStaticProps = async () => {
   )
 
   const { data } = await supabaseAdmin
-  .from('images')
-  .select('*')
-  .order('id')
+    .from('images')
+    .select('*')
+    .order('id')
 
   return {
     props:{
-      
+      images: data,
     }
   }
 }
