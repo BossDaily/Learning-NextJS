@@ -1,5 +1,10 @@
 import Image from "next/image";
 import BlurImage from "../lib/BlurImage";
+
+const cn = (...classes: string[]) => {
+  return classes.filter(Boolean).join(' ')
+}
+
 const Home = () => {
   return (
     <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -8,6 +13,9 @@ const Home = () => {
       </div>
     </div>
   );
+}
+const cn = (...classes: string[]) => {
+    return classes.filter(Boolean).join(' ')
 }
 
 
