@@ -1,12 +1,17 @@
 import Image from "next/image";
 import {GetStaticProps} from 'next';
 import BlurImage from "../lib/BlurImage";
+import { createClient } from "@supabase/supabase-js";
 
 const cn = (...classes: string[]) => {
   return classes.filter(Boolean).join(' ')
 }
 
 export const getStaticProps:GetStaticProps = async () => {
+  const supabaseAdmin = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL || '',
+    process.env.SUPABASE_SERVICE_ROLE_KEY || ''
+  )
 
 
   return {
