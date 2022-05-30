@@ -13,10 +13,14 @@ export const getStaticProps:GetStaticProps = async () => {
     process.env.SUPABASE_SERVICE_ROLE_KEY || ''
   )
 
+  const { data } = await supabaseAdmin
+  .from('images')
+  .select('*')
+  .order('id')
 
   return {
     props:{
-      data:null
+      
     }
   }
 }
