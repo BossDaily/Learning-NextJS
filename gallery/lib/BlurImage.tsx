@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { createClient } from "@supabase/supabase-js";
+import { Images } from "../types/image";
 
 const supabaseAdmin = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL || '',
@@ -11,7 +12,7 @@ const cn = (...classes: string[]) => {
     return classes.filter(Boolean).join(' ')
 }
 
-const BlurImage = () => {
+const BlurImage = ({ image }: { image: Images }) => {
     const [isLoading, setLoading] = useState(true)
 
     return (
