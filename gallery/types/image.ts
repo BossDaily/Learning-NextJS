@@ -1,4 +1,4 @@
-export type Image = {
+export type Images = {
     id: number
     href: string
     imageSrc: string
