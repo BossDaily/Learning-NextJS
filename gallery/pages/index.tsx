@@ -2,7 +2,7 @@ import Image from "next/image";
 import {GetStaticProps} from 'next';
 import BlurImage from "../lib/BlurImage";
 import { createClient } from "@supabase/supabase-js";
-import Images from "../types/image"
+import { Images } from "../types/image"
 
 const cn = (...classes: string[]) => {
   return classes.filter(Boolean).join(' ')
