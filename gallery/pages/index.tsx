@@ -6,8 +6,8 @@ const cn = (...classes: string[]) => {
   return classes.filter(Boolean).join(' ')
 }
 
-export const getStaticProps:GetStaticProps = async (ctx) => {
-  
+export const getStaticProps:GetStaticProps = async () => {
+
 
   return {
     props:{
